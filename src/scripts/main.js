@@ -6,8 +6,8 @@ const values = [];
 let sum = 0;
 
 for (const element of elements) {
-  const value = element.textContent;
-  const numberString = value.replace(/[^0-9]/g, '');
+  const valueText = element.textContent;
+  const numberString = valueText.replace(/[^0-9]/g, '');
   const number = parseInt(numberString);
 
   if (!isNaN(number)) {
